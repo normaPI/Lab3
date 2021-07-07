@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+}
+
+*,*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 2;
+  padding: 2;
+}
+header{
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  margin-bottom: 1%;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+
+  
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+header{
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+  color: whitesmoke;
+  background-color: #686766;
+  margin-bottom: 3px;
+}
+.menu{
+  display: none;
+}
+ .product{
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   border: gray 1px solid;
+   text-align: center;
+ }
+ .social{
+   display: flex;
+   list-style: none;
+   justify-content: space-around;
+   align-items: flex-end;
+ }
+
+
+ @media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  header{
+    display: flex;
+    flex-flow: row;
+    align-items:center;
+
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 2;
+    padding: 2;
+  }
+  .logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 5%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 2;
+    padding: 2;
+  
+  }
+  header{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    margin-bottom: 1%;
+  }
+  .logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 15%;
+    margin-right: 25%;
+  }
+  .navbar{
+    display: flex;
+    justify-content: flex-end;
+    color: whitesmoke;
+    background-color: #686766;
+    margin-bottom: 3px;
+  }
+  .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+  
+  }
+
+  .hamburger{
+    display: none;
+  }
+  main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+  .product{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border: gray 1px solid;
+    text-align: center;
+    width: 32%;
+    margin-top: 2%;
+    
+  }
+  li{
+    margin-right: 15%;
+  }
+
+  .social_icon{
+    margin-right: 0%;
+
+  }
+
+  
+}
+
